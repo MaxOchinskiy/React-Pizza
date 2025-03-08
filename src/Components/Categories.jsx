@@ -5,6 +5,7 @@ function Categories({items}) {
     const onSelectItem =(index) => {
         setActiveItem(index);
     }
+    hh
     return (
         <div className="categories">
             <ul>
