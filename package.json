@@ -10,11 +10,14 @@
     "classnames": "^2.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router": "^7.3.0",
+    "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
     "sass": "^1.85.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "fake-json": "json-server public/db.json --watch --port 3001",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
