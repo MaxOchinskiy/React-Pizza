@@ -92,12 +92,12 @@
     },
     {
       "id": 9,
-      "imageUrl": "https://cdn-irec.r-99.com/sites/default/files/product-images/1424066/eXfFJZgTIkshmhIhOREp8A.png",
-      "name": "Овощи и грибы ",
+      "imageUrl": "https://media.dodostatic.net/image/r:292x292/0194d4f6904975a5a6427e297591980d.avif",
+      "name": "Мясной микс с говядиной и колбасками",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 239,
-      "category": 5,
+      "price": 599,
+      "category": 1,
       "rating": 7
     }
   ]
