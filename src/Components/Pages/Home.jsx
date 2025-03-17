@@ -22,7 +22,7 @@ function Home() {
     const items = useSelector(({pizzas}) => pizzas.items);
     const onSelectCategory = React.useCallback((index) => {
         dispatch(setCategory(index));
-    },[]);
+    },[dispatch]);
 
     return (
         <div className="container">
