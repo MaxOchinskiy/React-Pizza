@@ -5,19 +5,20 @@ import PropTypes from "prop-types";
 function PizzaBlock({name,imageUrl,price,types,sizes}) {
     const availableTypes = ['тонкое','традиционное'];
     const availableSizes = [26,30,40];
+    const [activeType, setActiveType] = useState(types[0])
+    const [activeSize, setActiveSize] = useState(sizes[0])
     const onSelectType =(index)=>{
         setActiveType(index);
     };
     const onSelectSize =(index)=>{
         setActiveSize(index);
     };
-    const [activeType, setActiveType] = useState(types[0])
-    const [activeSize, setActiveSize] = useState(sizes[0])
+
     return (<div className="pizza-block">
             <img
                 className="pizza-block__image"
                 src={imageUrl}
-                alt="PizzaBlock"
+                alt="Index"
             />
             <h4 className="pizza-block__title">{name}</h4>
             <div className="pizza-block__selector">
@@ -72,11 +73,17 @@ function PizzaBlock({name,imageUrl,price,types,sizes}) {
 }
 
 PizzaBlock.propTypes = {
-    name: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    types: PropTypes.arrayOf(PropTypes.number).isRequired,
-    sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+    name: PropTypes.string,
+    imageUrl: PropTypes.string,
+    price: PropTypes.number,
+    types: PropTypes.arrayOf(PropTypes.number),
+    sizes: PropTypes.arrayOf(PropTypes.number),
+};
 
-}
+PizzaBlock.defaultProps = {
+    name: '---',
+    price: 0,
+    types: [],
+    sizes: [],
+};
 export default PizzaBlock;

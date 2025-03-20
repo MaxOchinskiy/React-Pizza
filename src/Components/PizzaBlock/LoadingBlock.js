@@ -1,7 +1,8 @@
 import ContentLoader from "react-content-loader";
 
-function PreloaderPizza() {
+function LoadingBlock() {
     return (<ContentLoader
+            className="pizza-block"
             speed={2}
             width={280}
             height={460}
@@ -20,4 +21,4 @@ function PreloaderPizza() {
     )
 }
 
-export default PreloaderPizza;
+export default LoadingBlock;
